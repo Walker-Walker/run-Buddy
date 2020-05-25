@@ -14,16 +14,17 @@ body {
 header {
     padding: 20px 35px;
     background-color: #39a6b2;
-    
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 /* needed to add "a" because it's an anchor element!!*/
 header h1 a {
     font-weight: bold;
+    margin: 0;
     font-size: 36px;
     color:#fce138;
-    margin: 0;
-    display: inline;
-
+   
 }
 
 header a {
@@ -33,8 +34,7 @@ header a {
 }
 
 header nav {
-    float: right;
-    margin: 0 7px;
+    margin: 7px 0;
 
 }
 
