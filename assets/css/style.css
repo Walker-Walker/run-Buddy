@@ -42,7 +42,7 @@ header {
     z-index:9999;
 }
 /* needed to add "a" because it's an anchor element!!*/
-header h1 {
+header h1 a {
     font-weight: bold;
     margin: 0;
     font-size: 36px;
@@ -72,11 +72,13 @@ header nav ul {
 }
 
 header nav ul li a {
-    padding: 10 15px;
+    
     font-weight: lighter;
     font-size: 1.5vw;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-   
+    display:flex;
+    justify-content: space-between;
+    padding: 10px 15px;
 }
 
 header nav ul li a:hover {
@@ -395,10 +397,87 @@ section {
   
 }
 
-.trainer img {
+.trainer-img {
     width: 100%;
+    min-height: 300px;
+    display: flex;
+    padding: 15px;
+    align-items:flex-end;  
+}
+
+.trainer-1 {
+    background:linear-gradient(180deg, rgba(252,225,56,0.3),rgba(2,78,118,1.5)),url("../images/trainer-1.jpg");
+    background-size:cover;
     
 }
+
+.trainer-2 {
+    background:linear-gradient(180deg, rgba(252,225,56,0.3),rgba(2,78,118,1.5)),url("../images/trainer-2.jpg");
+    background-size: cover;
+}
+
+.trainer-3 {
+    background:linear-gradient(180deg, rgba(252,225,56,0.3),rgba(2,78,118,1.5)),url("../images/trainer-3.jpg");
+    background-size: cover;
+}
+
+.trainer-img h3 {
+    position: relative;
+    z-index:8888;
+    font-size:28px;
+    margin-bottom:5px;
+}
+
+.trainer-img h4 {
+    position:relative;
+    z-index:8888;
+    font-size:22px;
+}
+
+/* 
+ .trainer-img::after {
+    content: "";
+    height: 1.5;
+    width: 100%;
+    background: rgba(252, 225, 56, 0.3);
+    background-image: linear-gradient(rgba(252,225,56,0.3),rgba(2,78,118,0.3));
+    position:relative;
+    top: 0;
+    left: 0; 
+  }  */
+
+/* .yellow-wrap,.trainer-img, .trainer-1::after {
+    content:"";
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(0deg,rgba(252,225,56)20%);
+    position:relative;
+    top: 0;
+    left: 0;
+}
+.trainer,.trainer-img, .trainer-2::after {
+    content:"";
+    height: 100%;
+    width: 100%;
+    background: rgba(252,225,56,0.3);
+    position:relative;
+    top: 0;
+    left: 0;
+}
+.trainer,.trainer-img, .trainer-3::after {
+    content:"";
+    height: 100%;
+    width: 100%;
+    background: rgba(252,225,56,0.3);
+    position:relative;
+    top: 0;
+    left: 0;
+} */
+
+
+
+
+
 
 .trainer-bio {
     padding: 25px;
